@@ -1,0 +1,4 @@
+gcc -c maths.c -o maths.o
+ar rcs libmaths.a maths.o
+gcc main.c -o my_program -L. -lmaths
+./my_program.exe
